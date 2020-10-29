@@ -13,7 +13,7 @@ public class GreetingController {
  }
 
 }
-
+@Controller
 class Regestration {
     @GetMapping("/getReg")
     public  String RegPage(Model model){ return "getReg";}
