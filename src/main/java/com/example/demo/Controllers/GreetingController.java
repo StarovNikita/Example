@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class GreetingController {
     @GetMapping("/")
     public String mainPage(Model model){
-     return "main";
+     return "mainPage";
  }
 
 }
