@@ -18,3 +18,11 @@ class Regestration {
     @GetMapping("/getReg")
     public  String RegPage(Model model){ return "getReg";}
 }
+@Controller
+ class Authorization {
+    @GetMapping("/signPage")
+    public String signPage(Model model){
+        return "signPage";
+    }
+
+}
