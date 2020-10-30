@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping(path="/demo")
-class TopControler {
+class TopController {
 
     @Autowired
     private PostRepository postRepository;
