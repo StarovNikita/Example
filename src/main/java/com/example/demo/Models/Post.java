@@ -11,16 +11,16 @@ public class Post {
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
     private Long id;
-    private String NameOfProduct;
-    private float Coast;
+    private  String NameOfProduct;
+    private float Cost;
     private String DescriptionOfProduct;
 
     public float getCoast() {
-        return Coast;
+        return Cost;
     }
 
-    public void setCoast(float coast) {
-        Coast = coast;
+    public void setCoast(float cost) {
+        Cost = cost;
     }
 
     public String getDescriptionOfProduct() {
