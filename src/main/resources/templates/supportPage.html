@@ -1,17 +1,41 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-
+    <title th:text = " ${Title}"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+   .form-signin{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+   }
 
+#Button_send {
+
+width:140px;
+}
+  </style>
 </head>
-<body>
+
 
 <header th:insert = " parts/header :: header"></header>
-<p>Support</p>
-<div th:insert = "parts/footer :: footer"></div>
+<body>
+<h2> Если вы столкнулись с проблемой, опишите ее в окне ниже и мы свяжемся с вами!</h2>
 
+
+<form name="test" method="post" action="input1.php">
+    <i><p>Ваше имя:<br></i>
+      <input type="text" size="50">
+    </p>
+    <i><p>Ваша проблема:</p></i>
+     <textarea name="comment" cols="100" rows="10"></textarea></p>
+    <button class="btn btn-lg btn-primary btn-block" id="Button_send" type="submit">Отправить</button>
+</form>
+
+
+<div class="mallbery-caa" style="z-index: 2147483647 !important; text-transform: none !important; position: fixed;"></div>
+<div class="mallbery-caa" style="z-index: 2147483647 !important; text-transform: none !important; position: fixed;"></div>
 
 </body>
 </html>
