@@ -26,3 +26,14 @@ class Regestration {
     }
 
 }
+@Controller
+class Catalog{
+    @GetMapping("/catalogPage")
+    public  String catalogPage(Model model) {return "catalogPage";}
+}
+
+@Controller
+class  Support{
+    @GetMapping("/supportPage")
+    public String supportPage(Model model) {return "supportPage";}
+}
