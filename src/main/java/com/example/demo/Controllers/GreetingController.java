@@ -10,17 +10,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class GreetingController {
 
     @Autowired
     private PostRepository postRepository;
 
-    @GetMapping("mainPage")
+    @RequestMapping("/")
     public String mainPage(Model model){
     Iterable<Post> posts = postRepository.findAll();
     model.addAttribute("posts", posts);
         return "mainPage";
  }
-}
 
+}
