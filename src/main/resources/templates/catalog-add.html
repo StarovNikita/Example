@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text = " ${Title}"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+
+<header th:insert = " parts/header :: header"></header>
+
+<div class="container mb-5 mt-5">
+    <h1>Add product</h1>
+    <form action="/catalogPage/add" method="post">
+
+        <input type="text" name="nameOfProduct" placeholder="Enter name of product" class="form-control"><br>
+        <textarea type="text" name="descriptionOfProduct" placeholder="Enter description" class="form-control"></textarea><br>
+        <button type="submit" class="btn btn-success">Add product</button><br>
+    </form>
+</div>
+
+<div th:insert = "parts/footer :: footer"></div>
+
+
+</body>
+</html>
