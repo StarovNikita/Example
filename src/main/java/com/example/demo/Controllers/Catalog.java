@@ -23,7 +23,7 @@ public class Catalog{
 
         return "catalog-add";
     }
-    @PostMapping("/catlogPage/add")
+    @PostMapping("/catalogPage/add")
     public String addPostCatalog(@RequestParam String nameOfProduct,@RequestParam String descriptionOfProduct, Model model){
         Post post = new Post(nameOfProduct,descriptionOfProduct);
         postRepository.save(post);
