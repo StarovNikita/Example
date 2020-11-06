@@ -16,10 +16,12 @@ public class Regestration {
     private RegestrationPageRepositry regestrationPageRepositry;
     @GetMapping("/getReg")
     public  String RegPage(Model model){
-      //  Iterable<RegestrationPage> RP = regestrationPageRepositry.findAll();
-      //  model.addAttribute("RP", RP);
-        return "/getReg";
+      Iterable<RegestrationPage> RP = regestrationPageRepositry.findAll();
+      model.addAttribute("RP", RP);
+        return "getReg";
     }
+
+
 
 
 
