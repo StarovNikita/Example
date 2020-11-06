@@ -1,35 +1,108 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title th:text = " ${Title}"/>
+    <title>Getting Started: Serving Web Content</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-#Button_send {
-
-width:140px;
-}
+   .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
   </style>
 </head>
-
-
-<header th:insert = " parts/header :: header"></header>
 <body>
-<h2> Если вы столкнулись с проблемой, опишите ее в окне ниже и мы свяжемся с вами!</h2>
+<header th:insert = " parts/header :: header"></header>
+<div class="container">
+    <div class="py-5 text-center">
+        <h2>Личный Кабинет</h2>
+    </div>
+
+    <div class="row" >
+        <div class="col-md-8 order-md-1" align="left">
+            <h4 class="mb-3">Billing address</h4>
+            <form class="needs-validation" novalidate="">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="firstName">First name</label>
+                        <output type="text" class="form-control" id="firstName" placeholder="" value="" required=""/>
+
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="lastName">Last name</label>
+                        <output type="text" class="form-control" id="lastName" placeholder="" value="" required=""/>
+
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="username">Username</label>
+                    <div class="input-group">
+                        <output type="text" class="form-control" id="username" placeholder="Username" required=""/>
+
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                    <output type="email" class="form-control" id="email" placeholder="you@example.com"/>
+                </div>
+
+                <div class="mb-3">
+                    <label for="address">Address</label>
+                    <output type="text" class="form-control" id="address" placeholder="1234 Main St" required=""/>
+
+                </div>
+
+                <div class="mb-3">
+                    <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+                    <output type="text" class="form-control" id="address2" placeholder="Apartment or suite"/>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-5 mb-3">
+                        <label for="country">Country</label>
+                        <output type="text" class="form-control" id="country" placeholder="Apartment or suite"/>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="state">State</label>
+                        <output type="text" class="form-control" id="state" placeholder="Apartment or suite"/>
+                        </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="zip">Zip</label>
+                        <output type="text" class="form-control" id="zip" placeholder="" required=""/>
+                    </div>
+                </div>
 
 
-<form name="test" method="post" action="input1.php">
-    <i><p>Ваше имя:<br></i>
-      <input type="text" size="50">
-    </p>
-    <i><p>Ваша проблема:</p></i>
-     <textarea name="comment" cols="100" rows="10"></textarea></p>
-    <button class="btn btn-lg btn-primary btn-block" id="Button_send" type="submit">Отправить</button>
-</form>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="cc-name">Name on card</label>
+                        <output type="text" class="form-control" id="cc-name" placeholder="" required=""/>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="cc-number">Credit card number</label>
+                        <input type="text" class="form-control" id="cc-number" placeholder="" required=""/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <label for="cc-expiration">Expiration</label>
+                        <output type="text" class="form-control" id="cc-expiration" placeholder="" required=""/>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="cc-cvv">CVV</label>
+                        <output type="text" class="form-control" id="cc-cvv" placeholder="" required=""/>
+                    </div>
+                </div>
+                <hr class="mb-4">
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+            </form>
+        </div>
+    </div>
 
-
-<div class="mallbery-caa" style="z-index: 2147483647 !important; text-transform: none !important; position: fixed;"></div>
-<div class="mallbery-caa" style="z-index: 2147483647 !important; text-transform: none !important; position: fixed;"></div>
-
+    <div th:insert = "parts/footer :: footer"></div>
+</div>
 </body>
 </html>
