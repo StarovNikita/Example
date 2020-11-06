@@ -20,13 +20,6 @@ public class Post {
     }
     public  Post(){}
 
-    /*public float getCoast() {
-        return Cost;
-    }
-
-    public void setCoast(float cost) {
-        Cost = cost;
-    }*/
 
     public String getDescriptionOfProduct() {
         return DescriptionOfProduct;

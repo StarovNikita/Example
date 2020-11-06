@@ -18,12 +18,12 @@ public class Regestration {
     public  String RegPage(Model model){
       //  Iterable<RegestrationPage> RP = regestrationPageRepositry.findAll();
       //  model.addAttribute("RP", RP);
-        return "getReg";
+        return "/getReg";
     }
 
 
 
-    @PostMapping("getReg")
+    @PostMapping("/getReg")
     public String addForLookReg(@RequestParam String firstName,@RequestParam String lastName,@RequestParam String userName, @RequestParam String email, @RequestParam String adress,@RequestParam String secondAdress, @RequestParam String country,@RequestParam String state, @RequestParam String zip,@RequestParam String nameOfCard,@RequestParam int creditCardNumber,@RequestParam int expiration,@RequestParam int CVV , Model model){
         RegestrationPage regestrationPage = new RegestrationPage(firstName, lastName, userName, email , adress , secondAdress,country, state , zip ,nameOfCard, creditCardNumber ,expiration,CVV);
         regestrationPageRepositry.save(regestrationPage);
