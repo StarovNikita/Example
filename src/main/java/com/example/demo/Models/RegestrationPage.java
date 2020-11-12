@@ -24,8 +24,7 @@ public class RegestrationPage {
     private int CreditCardNumber;
     private int Expiration;
     private int CVV;
-
-
+    
     public  RegestrationPage(){}
     public RegestrationPage(String firstName, String lastName, String userName, String email, String adress, String secondAdress, String country, String state, String zip, String nameOfCard, int creditCardNumber, int expiration, int CVV) {
         this.id = id;
