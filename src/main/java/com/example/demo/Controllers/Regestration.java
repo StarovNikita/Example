@@ -21,8 +21,6 @@ public class Regestration {
     private RegestrationPageRepositry regestrationPageRepositry;
     @GetMapping("/getReg")
     public  String RegPage(Model model){
-      Iterable<RegestrationPage> posts = regestrationPageRepositry.findAll();
-      model.addAttribute("posts", posts);
         return "getReg";
     }
 
@@ -33,13 +31,4 @@ public class Regestration {
         regestrationPageRepositry.save(regestrationPage);
         return "redirect:/cabinetPage";
     }
-
-   // @GetMapping("/cabinetPage/{id}")
-   // public String addUser (@PathVariable(value = "id") long id, Model model) {
-   // Optional<RegestrationPage> post = regestrationPageRepositry.findById(id);
-     //   ArrayList<RegestrationPage> res = new ArrayList<>();
-       // post.ifPresent(res::add);
-       // model.addAttribute("post", res);
-        //return "cabinetPage";
-   // }
 }

@@ -13,8 +13,8 @@
 
 <div class ="container mt-5">
     <h1>Cabinet</h1>
-<div th : each="${posts}" class="alert alert-info mt-2"/>
-    <p th : text="${el.first_name}"/>
+<div th : each="el : ${posts}" class="alert alert-info mt-2"/>
+    <p th : text="${el.first_name}" />
 </div>
 
 
