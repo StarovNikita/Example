@@ -13,8 +13,8 @@ public class Catalog{
     private PostRepository postRepository;
     @GetMapping ("/catalogPage")
     public  String catalogPage(Model model) {
-     //   Iterable<Post> posts = postRepository.findAll();
-      //  model.addAttribute("posts", posts);
+       Iterable<Post> posts = postRepository.findAll();
+       model.addAttribute("posts", posts);
         return "catalogPage";
     }
 

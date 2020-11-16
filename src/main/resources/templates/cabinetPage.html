@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title th:text = " ${Title}"/>
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -13,8 +13,9 @@
 
 <div class ="container mt-5">
     <h1>Cabinet</h1>
-<div th : each="el : ${posts}" class="alert alert-info mt-2"/>
-    <p th : text="${el.first_name}" />
+    <div th:each="el:${information}">
+    <p th:text=" ${el.FirstName}" />
+    </div>
 </div>
 
 

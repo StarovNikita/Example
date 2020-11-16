@@ -13,10 +13,14 @@ public class TopController{
     @Autowired
     private PostRepository postRepository;
 
-    @GetMapping("/")
+    @GetMapping("/mainPage")
     public String supportPage(Model model) {
-        Iterable<Post> posts = postRepository.findAll();
-        model.addAttribute("posts", posts);
+
+        return "mainPage";
+    }
+    @GetMapping("/")
+    public String Page(Model model) {
+
         return "mainPage";
     }
 
