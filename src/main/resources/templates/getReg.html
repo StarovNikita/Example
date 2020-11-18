@@ -16,9 +16,12 @@
 <header th:insert = " parts/header :: header"></header>
 
 
+
 <div class="container mb-5 mt-5">
     <h1>Regestration page</h1>
     <form action="/getReg" method="post">
+
+
 
         <input type="text" name="firstName" placeholder="Enter your name " class="form-control"><br>
         <input type="text" name="lastName" placeholder="Enter your last name " class="form-control"><br>
@@ -26,18 +29,21 @@
         <input type="text" name="email" placeholder="Enter your email " class="form-control"><br>
         <input type="text" name="adress" placeholder="Enter your adress " class="form-control"><br>
         <input type="text" name="secondAdress" placeholder="Enter your second adress " class="form-control"><br>
-        <input type="text" name="country" placeholder="Enter came of country, where do you live " class="form-control"><br>
+        <!--input type="text" name="country" placeholder="Enter came of country, where do you live " class="form-control"><br>
         <input type="text" name="state" placeholder="Enter your state name " class="form-control"><br>
         <input type="text" name="zip" placeholder="Enter zip of your state " class="form-control"><br>
         <input type="text" name="nameOfCard" placeholder="Enter name of YOUR CARD " class="form-control"><br>
         <input type="text" name="creditCardNumber" placeholder="Enter your credit card number" class="form-control"><br>
         <input type="text" name="expiration" placeholder="Enter your expiration " class="form-control"><br>
-        <input type="text" name="CVV" placeholder="Enter your CVV " class="form-control"><br>
-        <button type="submit" class="btn btn-success" href="/getReg">sign up</button><br>
+        <input type="text" name="CVV" placeholder="Enter your CVV " class="form-control"><br-->
+
+
+
+        <button type="submit" class="btn btn-success" href="/">sign up</button><br>
     </form>
 </div>
 
-    <div th:insert = "parts/footer :: footer"></div>
+<div th:insert = "parts/footer :: footer"></div>
 
 </body>
 </html>

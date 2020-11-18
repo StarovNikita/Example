@@ -2,6 +2,7 @@ package com.example.demo.Models;
 
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Table(name = "RegestrationTable")
@@ -16,7 +17,7 @@ public class RegestrationPage {
     private String UserName;
     private String Email;
     private String Adress;
-    private String SecondAdress;
+   /* private String SecondAdress;
     private String Country;
     private String State;
     private String Zip;
@@ -24,25 +25,45 @@ public class RegestrationPage {
     private int CreditCardNumber;
     private int Expiration;
     private int CVV;
-    
+*/
+
+
+
     public  RegestrationPage(){}
-    public RegestrationPage(String firstName, String lastName, String userName, String email, String adress, String secondAdress, String country, String state, String zip, String nameOfCard, int creditCardNumber, int expiration, int CVV) {
-        this.id = id;
+
+    public RegestrationPage(String firstName, String lastName) {
+        FirstName = firstName;
+        LastName = lastName;
+
+    }
+
+    public RegestrationPage( String firstName, String lastName, String userName, String email, String adress) {
+
         FirstName = firstName;
         LastName = lastName;
         UserName = userName;
         Email = email;
         Adress = adress;
-        SecondAdress = secondAdress;
-        Country = country;
-        State = state;
-        Zip = zip;
-        NameOfCard = nameOfCard;
-        CreditCardNumber = creditCardNumber;
-        Expiration = expiration;
-        this.CVV = CVV;
     }
 
+    /*  public RegestrationPage(String firstName, String lastName, String userName, String email, String adress, String secondAdress, String country, String state, String zip, String nameOfCard, int creditCardNumber, int expiration, int CVV) {
+
+                this.id = id;
+                FirstName = firstName;
+                LastName = lastName;
+                UserName = userName;
+                Email = email;
+                Adress = adress;
+                SecondAdress = secondAdress;
+                Country = country;
+                State = state;
+                Zip = zip;
+                NameOfCard = nameOfCard;
+                CreditCardNumber = creditCardNumber;
+                Expiration = expiration;
+                this.CVV = CVV;
+            }
+        */
     public int getId() {
         return id;
     }
@@ -90,7 +111,7 @@ public class RegestrationPage {
     public void setAdress(String adress) {
         Adress = adress;
     }
-
+/*
     public String getSecondAdress() {
         return SecondAdress;
     }
@@ -154,4 +175,6 @@ public class RegestrationPage {
     public void setCVV(int CVV) {
         this.CVV = CVV;
     }
+
+ */
 }

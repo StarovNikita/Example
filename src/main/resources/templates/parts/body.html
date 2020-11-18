@@ -1,215 +1,5 @@
 <div xmlns:th:fragment="body">
 
-    <head><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, embed[type="application/pdf"] {
-    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
-}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
-  background-color: var(--darkreader-inline-bgcolor) !important;
-}
-[data-darkreader-inline-bgimage] {
-  background-image: var(--darkreader-inline-bgimage) !important;
-}
-[data-darkreader-inline-border] {
-  border-color: var(--darkreader-inline-border) !important;
-}
-[data-darkreader-inline-border-bottom] {
-  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
-}
-[data-darkreader-inline-border-left] {
-  border-left-color: var(--darkreader-inline-border-left) !important;
-}
-[data-darkreader-inline-border-right] {
-  border-right-color: var(--darkreader-inline-border-right) !important;
-}
-[data-darkreader-inline-border-top] {
-  border-top-color: var(--darkreader-inline-border-top) !important;
-}
-[data-darkreader-inline-boxshadow] {
-  box-shadow: var(--darkreader-inline-boxshadow) !important;
-}
-[data-darkreader-inline-color] {
-  color: var(--darkreader-inline-color) !important;
-}
-[data-darkreader-inline-fill] {
-  fill: var(--darkreader-inline-fill) !important;
-}
-[data-darkreader-inline-stroke] {
-  stroke: var(--darkreader-inline-stroke) !important;
-}
-[data-darkreader-inline-outline] {
-  outline-color: var(--darkreader-inline-outline) !important;
-}</style><style class="darkreader darkreader--variables" media="screen">:root {
-   --darkreader-neutral-background: #181a1b;
-   --darkreader-neutral-text: #e8e6e3;
-   --darkreader-selection-background: #004daa;
-   --darkreader-selection-text: #e8e6e3;
-}</style><style class="darkreader darkreader--user-agent" media="screen">html {
-    background-color: #181a1b !important;
-}
-html, body, input, textarea, select, button {
-    background-color: #181a1b;
-}
-html, body, input, textarea, select, button {
-    border-color: #736b5e;
-    color: #e8e6e3;
-}
-a {
-    color: #3391ff;
-}
-table {
-    border-color: #545b5e;
-}
-::placeholder {
-    color: #b2aba1;
-}
-input:-webkit-autofill,
-textarea:-webkit-autofill,
-select:-webkit-autofill {
-    background-color: #555b00 !important;
-    color: #e8e6e3 !important;
-}
-::-webkit-scrollbar {
-    background-color: #202324;
-    color: #aba499;
-}
-::-webkit-scrollbar-thumb {
-    background-color: #454a4d;
-}
-::-webkit-scrollbar-thumb:hover {
-    background-color: #575e62;
-}
-::-webkit-scrollbar-thumb:active {
-    background-color: #484e51;
-}
-::-webkit-scrollbar-corner {
-    background-color: #181a1b;
-}
-* {
-    scrollbar-color: #202324 #454a4d;
-}
-::selection {
-    background-color: #004daa !important;
-    color: #e8e6e3 !important;
-}
-::-moz-selection {
-    background-color: #004daa !important;
-    color: #e8e6e3 !important;
-}</style>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-        <meta name="generator" content="Jekyll v4.1.1">
-        <title>Product example · Bootstrap</title>
-
-        <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/product/">
-
-        <!-- Bootstrap core CSS -->
-        <link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"><style class="darkreader darkreader--sync" media="screen"></style>
-
-        <!-- Favicons -->
-        <link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-        <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-        <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-        <link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
-        <link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c" data-darkreader-inline-color="" style="--darkreader-inline-color:#9e86c3;">
-        <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
-        <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
-        <meta name="theme-color" content="#453163">
-
-
-        <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style><style class="darkreader darkreader--sync" media="screen"></style>
-        <!-- Custom styles for this template -->
-        <link href="product.css" rel="stylesheet"><style class="darkreader darkreader--cors" media="screen">.container {
-  max-width: 960px;
-}
-
-
-
-.site-header {
-  background-color: rgba(0, 0, 0, .85);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
-}
-.site-header a {
-  color: #999;
-  transition: ease-in-out color .15s;
-}
-.site-header a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-
-
-.product-device {
-  position: absolute;
-  right: 10%;
-  bottom: -30%;
-  width: 300px;
-  height: 540px;
-  background-color: #333;
-  border-radius: 21px;
-  -webkit-transform: rotate(30deg);
-  transform: rotate(30deg);
-}
-
-.product-device::before {
-  position: absolute;
-  top: 10%;
-  right: 10px;
-  bottom: 10%;
-  left: 10px;
-  content: "";
-  background-color: rgba(255, 255, 255, .1);
-  border-radius: 5px;
-}
-
-.product-device-2 {
-  top: -25%;
-  right: auto;
-  bottom: 0;
-  left: 5%;
-  background-color: #e5e5e5;
-}
-
-
-
-
-.flex-equal > * {
-  -ms-flex: 1;
-  flex: 1;
-}
-@media (min-width: 768px) {
-  .flex-md-equal > * {
-    -ms-flex: 1;
-    flex: 1;
-  }
-}
-
-.overflow-hidden { overflow: hidden; }</style><style class="darkreader darkreader--sync" media="screen"></style>
-        <meta name="darkreader" content="48cd38175a0d25a3542ada9aacdd432f"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
-    background-color: #7b5300 !important;
-    border-color: #d8b013 !important;
-    color: #f3e8c8 !important;
-}
-::placeholder {
-    opacity: 0.5 !important;
-}</style></head>
 
 <body>
 
@@ -223,15 +13,15 @@ select:-webkit-autofill {
     <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
 </div>
 
-<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-    <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3" >
+    <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-3 px-md-3 text-center text-white overflow-hidden" style="width:50% !important;">
         <div class="my-3 py-3">
             <h2 class="display-5">Самый популярный товар</h2>
             <p class="lead">Закажите сегодня и получите скидку!</p>
         </div>
         <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
     </div>
-    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="width:50% !important;">
         <div class="my-3 p-3">
             <h2 class="display-5">Самый популярный товар</h2>
             <p class="lead">Закажите сегодня и получите скидку!</p>
@@ -241,14 +31,14 @@ select:-webkit-autofill {
 </div>
 
 <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="width:50% !important;">
         <div class="my-3 p-3">
             <h2 class="display-5">Another headline</h2>
             <p class="lead">Закажите сегодня и получите скидку!</p>
         </div>
         <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
     </div>
-    <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+    <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" style="width:50% !important;">
         <div class="my-3 py-3">
             <h2 class="display-5">Самый популярный товар</h2>
             <p class="lead">Закажите сегодня и получите скидку!</p>
@@ -259,14 +49,14 @@ select:-webkit-autofill {
 
 
 <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="width:50% !important;">
         <div class="my-3 p-3">
             <h2 class="display-5">Самый популярный товар</h2>
             <p class="lead">Закажите сегодня и получите скидку!</p>
         </div>
         <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
     </div>
-    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="width:50% !important;">
         <div class="my-3 py-3">
             <h2 class="display-5">Самый популярный товар</h2>
             <p class="lead">Закажите сегодня и получите скидку!</p>

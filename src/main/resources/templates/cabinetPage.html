@@ -13,12 +13,25 @@
 
 <div class ="container mt-5">
     <h1>Cabinet</h1>
-    <div th:each="el:${information}">
-    <p th:text=" ${el.FirstName}" />
+    <div th:each="el:${information}" class="alert alert-info mt-2">
+        <p> Здравствуйте, <i th:text=" ${el.FirstName}" /> ! </p>
+        <li> Фамилия</li><i th:text=" ${el.lastName}" />
+
+
+
+
     </div>
+
 </div>
 
 
+
+<div>
+    <form action="/logout" method="post">
+        <input type="submit" value="Sign Out">
+
+    </form>
+</div>
 <div th:insert = "parts/footer :: footer"></div>
 
 
