@@ -8,7 +8,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class Authorization {
     @GetMapping("/signPage")
     public String signPage(Model model){
+
         return "signPage";
+
     }
 
 }
